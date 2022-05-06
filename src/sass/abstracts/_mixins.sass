@@ -1,0 +1,35 @@
+@mixin title($color)
+  font-weight: 900
+  font-size: 60px
+  line-height: 105%
+  color: $color
+  font-family: $title-font
+  width: 100%
+  @media (max-width: $mobile)
+    font-size: 36px
+
+@mixin subtitle($color)
+  font-weight: 300
+  font-size: 28px
+  line-height: 120%
+  color: $color
+
+@mixin card-title()
+  font-size: 28px
+  line-height: 115%
+  color: $white
+
+@mixin btn-main($background, $color)
+  padding: 0 32px
+  border-radius: 40px
+  height: 56px
+  border: none
+  font-size: 20px
+  line-height: 120%
+  font-weight: 500
+  color: $color
+  transition: $transition
+  cursor: pointer
+  background: $background
+  &:hover
+    transition: $transition

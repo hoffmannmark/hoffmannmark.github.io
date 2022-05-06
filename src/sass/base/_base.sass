@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;900&display=swap')
+
+body
+  font-family: $main-font
+  font-size: 16px
+  line-height: 120%
+  font-weight: 400
+  color: $black
+  background: $white
+  position: relative
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  letter-spacing: -0.03em
+
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+  flex: 1
+  height: 100%
+  overflow: hidden
+
+.body
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  padding: 0 32px
+
+.overflow
+  overflow: hidden
+
+@media (max-width: $mobile)
+  .container
+    max-width: 414px

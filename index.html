@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Український Корабель</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/svg" sizes="32x32" href="#">
+    <link rel="stylesheet" href="public/assets/css/main.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="header__logo">
+                <img src="src/img/logo.svg" alt="">
+            </a>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#course" class="header__item-link">
+                        про нас
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#help" class="header__item-link">
+                        потребую підтримки
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#psycho" class="header__item-link">
+                        я фахівець
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#donate" class="header__item-link">
+                        донатити
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#footer" class="header__item-link">
+                        контакти
+                    </a>
+                </li>
+                <li class="header__lang">
+                    <p class="header__lang-item">EN</p>
+                    <p class="header__lang-item active">UA</p>
+                </li>
+            </ul>
+            <div class="hamburger " id="toggle">
+                <div class="hamburger__box">
+                    <div class="hamburger__btn">
+                        <span class="hamburger__btn_item top"></span>
+                        <span class="hamburger__btn_item middle"></span>
+                        <span class="hamburger__btn_item bottom"></span>
+                    </div>
+                </div>
+                <div class="hamburger__overlay" id="overlay">
+                    <div class="hamburger__overlay-btn"></div>
+                    <div class="hamburger__overlay-box">
+                        <hr class="header__hr">
+                        <ul class="hamburger__overlay-list">
+                            <li class="hamburger__overlay-list-lang">
+                                <p class="hamburger__overlay-list-lang-item">EN</p>
+                                <p class="hamburger__overlay-list-lang-item active">UA</p>
+                            </li>
+                            <li class="hamburger__overlay-list-item">
+                                <a href="#" class="hamburger__overlay-list-item-link">
+                                    про нас
+                                </a>
+                            </li>
+                            <li class="hamburger__overlay-list-item">
+                                <a href="#" class="hamburger__overlay-list-item-link">
+                                    потребую підтримки
+                                </a>
+                            </li>
+                            <li class="hamburger__overlay-list-item">
+                                <a href="#" class="hamburger__overlay-list-item-link">
+                                    я фахівець
+                                </a>
+                            </li>
+                            <li class="hamburger__overlay-list-item">
+                                <a href="#" class="hamburger__overlay-list-item-link">
+                                    донатити
+                                </a>
+                            </li>
+                            <li class="hamburger__overlay-list-item">
+                                <a href="#" class="hamburger__overlay-list-item-link">
+                                    контакти
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="hamburger__social">
+                            <a href="https://www.facebook.com/profile.php?id=100079782681066" class="hamburger__social-item" target="_blank">
+                                <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
+                                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/ukraine_ship" class="hamburger__social-item" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 1L14 21L10 12L1 8L21 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/ukraineship/?igshid=YmMyMTA2M2Y=" class="hamburger__social-item" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1902 8.22768 13.4229 8.09402 12.5922C7.96035 11.7615 8.09202 10.9099 8.47028 10.1584C8.84854 9.40685 9.45414 8.79374 10.2009 8.40624C10.9477 8.01874 11.7977 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z"
+                                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:ukraine.ship@gmail.com" class="hamburger__social-item" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/ukranianship" class="hamburger__social-item" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z"
+                                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 9H2V21H6V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="course" id="course">
+        <div class="container">
+            <div class="course__title-box">
+                <h1 class="course__title">
+                    Тримаємо курс на психологічне здоров`я кожного українця
+                </h1>
+                <p class="course__subtitle">
+                    Український Корабель – це платформа, що об'єднує людей, які потребують психологічної допомоги, та фахівців, що її надають
+                </p>
+            </div>
+            <ul class="course__cards">
+                <li class="course__cards-item">
+                    <div class="course__cards-item-box">
+                        <p class="course__cards-title">
+                            Потребую психологічної підтримки
+                        </p>
+                        <p class="course__cards-subtitle">
+                            Залишайте заявку і ми знайдемо спеціаліста, який надасть вам безоплатну допомогу
+                        </p>
+                    </div>
+                    <button class="course__cards-btn">
+                        дізнатись більше
+                    </button>
+                </li>
+                <li class="course__cards-item">
+                    <div class="course__cards-item-box">
+                        <p class="course__cards-title">
+                            Я фахівець
+                        </p>
+                        <p class="course__cards-subtitle">
+                            Якщо ви фахівець з психології здоров’я людини, долучайтесь до платформи і надавайте оплачувані консультації тим, хто цього потребує
+                        </p>
+                    </div>
+                    <button class="course__cards-btn">
+                        дізнатись більше
+                    </button>
+                </li>
+                <li class="course__cards-item">
+                    <div class="course__cards-item-box">
+                        <p class="course__cards-title">
+                            Хочу донатити
+                        </p>
+                        <p class="course__cards-subtitle">
+                            Долучайтесь до платформи як філантроп, і ще більше людей зможуть отримати необхідну допомогу
+                        </p>
+                    </div>
+                    <button class="course__cards-btn">
+                        дізнатись більше
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <img class="about__img" src="/src/img/about-img.svg" alt="">
+                <div class="about__box">
+                    <div class="about__title-box">
+                        <h2 class="about__title">
+                            Про нас
+                        </h2>
+                        <img class="about__title-img" src="src/img/about-title-img.svg" alt="">
+                    </div>
+                    <div class="about__text-box">
+                        <p class="about__text">
+                            Український Корабель – це фонд створений у 2022 році, з метою відновлення фізичного здоров'я та душевного комфорту українців. Мета платформи – безкоштовне надання психологічних консультацій.
+                        </p>
+                        <p class="about__text">
+                            Ми допомагаємо українцям, які терміново потребують психологічної підтримки у зв’язку з жахливими подіями та критичними змінами, що неочікувано вторглись в їхнє життя.
+                        </p>
+                        <p class="about__text">
+                            Разом з цим, платформа об’єднує кваліфікованих спеціалістів з психології здоров’я людини, щоб надати їм оплачувану роботу і клієнтів, які зараз потребують їхньої допомоги як ніколи.
+                        </p>
+                        <p class="about__text">
+                            Врятуємо разом ментальне здоров’я українців на шляху до перемоги! Заради майбутнього.
+                        </p>
+                    </div>
+                    <div class="about__social">
+                        <a href="https://www.facebook.com/profile.php?id=100079782681066" class="about__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/ukraine_ship" class="about__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ukraineship/?igshid=YmMyMTA2M2Y=" class="about__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M16 11.3701C16.1234 12.2023 15.9813 13.0523 15.5938 13.7991C15.2063 14.5459 14.5932 15.1515 13.8416 15.5297C13.0901 15.908 12.2385 16.0397 11.4078 15.906C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1903 8.22774 13.4229 8.09408 12.5923C7.96042 11.7616 8.09208 10.91 8.47034 10.1584C8.8486 9.40691 9.4542 8.7938 10.201 8.4063C10.9478 8.0188 11.7978 7.87665 12.63 8.00006C13.4789 8.12594 14.2649 8.52152 14.8717 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:ukraine.ship@gmail.com" class="about__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/ukranianship" class="about__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z"
+                                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider" id="slider">
+        <div class="container">
+            <h2 class="slider__title">
+                Що кажуть наші фахівці?
+            </h2>
+        </div>
+        <div class="swiper">
+            <ul class="swiper-wrapper">
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                        Lorem ipsum dolor sit amet, fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+                <li class="slider__item swiper-slide">
+                    <div class="slider__item-wrapp">
+                        <img class="slider__item-avatar" src="src/img/avatar.svg" alt="">
+                        <div class="slider__item-title-box">
+                            <h3 class="slider__item-title">
+                                Анастасія
+                            </h3>
+                            <p class="slider__item-subtitle">
+                                example experience
+                            </p>
+                        </div>
+                    </div>
+                    <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est eum inventore, ipsum itaque iusto sed sunt? Amet corporis dolor fugit hic ipsam libero odit quo repellendus sapiente sit? Ducimus.
+                    </p>
+                </li>
+            </ul>
+            <div class="slider__nav-wrapper">
+                <div class="swiper-button-prev">
+                    <img src="/src/img/arrow-left.svg" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                    <img src="/src/img/arrow-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="psycho" id="psycho">
+        <div class="container">
+            <h2 class="psycho__title">
+                Я фахівець з психічного здоров’я
+            </h2>
+            <div class="psycho__wrapper">
+                <button class="psycho__img-btn psycho__img-btn_mob">
+                    заповнити заявку
+                </button>
+                <ul class="psycho__list">
+                    <li class="psycho__list-item">
+                        <p class="psycho__list-item-text">
+                            Якщо ви маєте завершену вищу психологічну освіту або пройшли перепідготовку на базі вищої освіти за спеціальністю «Психологія» і, звичайно ж, хочете використати свої професійні навички з максимальною
+                            користю – ви нам потрібні.
+                        </p>
+                    </li>
+                    <li class="psycho__list-item">
+                        <p class="psycho__list-item-text">
+                            Заповнюйте форму, і ми включимо вас у базу психологів Українського Корабля.
+                        </p>
+                    </li>
+                    <li class="psycho__list-item">
+                        <p class="psycho__list-item-text">
+                            Коли ми отримаємо заявку із потребою за вашим профілем, ми зв'яжемо вас із пацієнтом для консультації.
+                        </p>
+                        <p class="psycho__list-item-text">
+                            Це оплачувана робота. Оплату консультацій забезпечують донати.
+                        </p>
+                    </li>
+                </ul>
+                <div class="psycho__img-wrapper">
+                    <img class="psycho__img" src="src/img/ill-psyco.svg" alt="">
+                    <button class="psycho__img-btn psycho__img-btn_desk">
+                        заповнити заявку
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="help" id="help">
+        <div class="container">
+            <h2 class="help__title">
+                Я потребую допомоги
+            </h2>
+            <div class="help__wrapper">
+                <div class="help__img-wrapper">
+                    <img class="help__img help__img_desk" src="src/img/help.svg" alt="">
+                    <img class="help__img help__img_mob" src="src/img/help-img-mob.svg" alt="">
+                    <button class="help__img-btn help__img-btn_desk">
+                        заповнити заявку
+                    </button>
+                </div>
+                <ul class="help__list">
+                    <li class="help__list-item">
+                        <p class="help__list-item-text">
+                            Якщо ви відчуваєте, що потребуєте фахової допомоги з психічного здоров’я, але не знаєте, який саме спеціаліст вам потрібен, заповнюйте заявку.
+                        </p>
+                    </li>
+                    <li class="help__list-item">
+                        <p class="help__list-item-text">
+                            Наш психолог розгляне ваш запит, індивідуально підбере вам спеціаліста і зв'яже його з вами для консультації.
+                        </p>
+                        <p class="help__list-item-text">
+                            Вона не обов’язково буде разова. Якщо буде необхідно, ви отримаєте курс занять.
+                        </p>
+                    </li>
+                    <li class="help__list-item">
+                        <p class="help__list-item-text">
+                            Це повністю безоплатно. Робота спеціаліста сплачується коштом донатів.
+                        </p>
+                        <p class="help__list-item-text">
+                            З нами працюють лише кваліфіковані фахівці, з якими ви можете відверто обговорити ситуації, що вас турбують.
+                        </p>
+                    </li>
+                    <li class="help__list-item">
+                        <p class="help__list-item-text">
+                            Це повністю конфіденційно. Усе, що ви розповісте психологу, залишається тільки між вами. Платформа отримує лише контакти, які ви зазначаєте у формі реєстрації.
+                        </p>
+                    </li>
+                    <li class="help__btn-mob-box">
+                        <button class="help__img-btn help__img-btn_mob">
+                            заповнити заявку
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="donate" id="donate">
+        <div class="container">
+            <div class="donate__wrapper">
+                <h2 class="donate__title">
+                    Я хочу задонатити
+                </h2>
+                <div class="donate__inner">
+                    <div class="donate__box">
+                        <p class="donate__text">
+                            Ваші донати – це паливо Українського Корабля, що невпинно рухається до перемоги і сприяє відновленню України.
+                        </p>
+                        <p class="donate__text">
+                            Кошти йдуть на оплату фахівців, які надають психологічну підтримку та забезпечують операційну діяльність платформи.
+                        </p>
+                        <p class="donate__text">
+                            Щомісяця ми публікуємо звітність витрат фонду та збираємо відгуки за результатами роботи фахівців та їх пацієнтів.
+                        </p>
+                        <p class="donate__text">
+                            За бажанням ми публікуємо ім’я/лого наших філантропів на сайті фонду та у соціальних мережах.
+                        </p>
+                        <div class="donate__btn-box">
+                            <button class="donate__btn">
+                                зробити внесок
+                            </button>
+                            <button class="donate__btn">
+                                реквізити
+                            </button>
+                        </div>
+                    </div>
+                    <img class="donate__img" src="src/img/donate-img.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <h2 class="partners__title">
+                Наші партнери
+            </h2>
+            <ul class="partners__wrapper">
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/macpaw-logo.png" alt="">
+                </li>
+                <li class="partners__item">
+                    <img class="partners__item-logo" src="src/img/ssc-logo.png" alt="">
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="questions__wrapper">
+                <div class="questions__title-box">
+                    <h2 class="questions__title">
+                        Залишились питання?
+                    </h2>
+                    <p class="questions__subtitle">
+                        Напишіть нам. Будемо раді відповісти на ваші питання
+                    </p>
+                </div>
+                <div class="questions__social">
+                    <a href="https://www.facebook.com/profile.php?id=100079782681066" class="questions__social-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                  stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/ukraine_ship" class="questions__social-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/ukraineship/?igshid=YmMyMTA2M2Y=" class="questions__social-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M16 11.3698C16.1234 12.2021 15.9813 13.052 15.5938 13.7988C15.2063 14.5456 14.5932 15.1512 13.8416 15.5295C13.0901 15.9077 12.2385 16.0394 11.4078 15.9057C10.5771 15.7721 9.80977 15.3799 9.21485 14.785C8.61993 14.1901 8.22774 13.4227 8.09408 12.592C7.96042 11.7614 8.09208 10.9097 8.47034 10.1582C8.8486 9.40667 9.4542 8.79355 10.201 8.40605C10.9478 8.01856 11.7978 7.8764 12.63 7.99981C13.4789 8.1257 14.2649 8.52128 14.8717 9.12812C15.4785 9.73496 15.8741 10.5209 16 11.3698Z"
+                                  stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 6.5H17.51" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:ukraine.ship@gmail.com" class="questions__social-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 6L12 13L2 6" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/ukranianship" class="questions__social-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z"
+                                  stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 9H2V21H6V9Z" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="#2B7AF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img src="src/img/logo-footer-desk.svg" alt="" class="footer__logo">
+                <div class="footer__box">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">звітність</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">нормативні документи</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">політика конфіденційності</a>
+                        </li>
+                    </ul>
+                    <a href="mailto:ukraine.ship@gmail.com" class="footer__email">ukraine.ship@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="container">
+            <p class="footer__copyright-text">
+                2022 – Благодійний фонд Український Корабель
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script defer src="public/assets/js/app_type.js"></script>
+</body>
+
+</html>

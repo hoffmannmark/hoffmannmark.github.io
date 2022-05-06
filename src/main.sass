@@ -1,0 +1,554 @@
+@import "sass/abstracts/variables"
+@import "sass/abstracts/mixins"
+@import "sass/base/reset"
+@import "sass/base/base"
+
+@import "sass/components/swiper"
+@import "sass/components/header"
+@import "sass/components/footer"
+
+.course
+  width: 100%
+  background: url("/src/img/bg01.svg") top center no-repeat
+  margin-top: 12rem
+  padding-bottom: 80px
+  &__wrapper
+    justify-content: flex-start
+    width: 100%
+  &__title
+    @include title($lightblue)
+    margin-bottom: 24px
+    margin-top: -64px
+    &-box
+      max-width: 700px
+      padding-bottom: 12rem
+  &__subtitle
+    @include subtitle($black)
+    max-width: 495px
+  &__cards
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    grid-column-gap: 16px
+    &-title
+      @include card-title
+      padding-bottom: 24px
+    &-subtitle
+      color: $white
+      font-weight: 300
+    &-item
+      background: $blue
+      border-radius: 40px
+      padding: 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &-box
+        display: flex
+        flex-direction: column
+        max-width: 236px
+        padding-bottom: 120px
+    &-btn
+      @include btn-main($white, $blue)
+      &:hover
+        background: $hoverWhite
+        transition: $transition
+
+
+.about
+  padding: 80px 0
+  &__wrapper
+    display: flex
+  &__title
+    @include title($black)
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-img
+      display: none
+  &__text
+    font-size: 16px
+    line-height: 140%
+    color: $black
+    font-weight: 300
+    padding-bottom: 16px
+    &-box
+      padding: 60px 0
+  &__box
+    width: 50%
+  &__img
+    margin-left: -100px
+    width: 50%
+    padding-right: 80px
+  &__social
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 460px
+    &-item
+      border-radius: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 60px
+      height: 60px
+      margin-right: 8px
+      background: $blue
+      transition: $transition
+      &:last-child
+        margin-right: 0
+      &:hover
+        transition: $transition
+        background: #5799FF
+
+
+.slider
+  width: 100%
+  padding: 80px 0
+  &__item
+    display: flex
+    flex-direction: column
+    max-width: 320px
+    &-wrapp
+      display: flex
+      align-items: center
+    &-title
+      font-size: 28px
+      font-weight: 500
+      line-height: 115%
+      &-box
+        color: black
+    &-subtitle
+      color: $black
+      line-height: 140%
+      font-weight: 300
+      margin-bottom: 16px
+    &-avatar
+      margin-right: 40px
+      min-width: 100px
+      height: 100px
+    &-text
+      background: $yellow
+      border-radius: 40px
+      padding: 40px
+      color: $black
+      line-height: 140%
+      font-weight: 300
+      font-size: 16px
+      margin-top: 40px
+      position: relative
+      &:before
+        content: url("/src/img/experience-tail.svg")
+        position: absolute
+        top: -39px
+        left: 64px
+  &__nav
+    &-wrapper
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 40px
+      width: max-content
+      margin: 0 auto
+      position: relative
+      padding: 64px 0
+  &__title
+    @include title($black)
+    text-align: center
+    padding-bottom: 64px
+
+
+.psycho
+  padding: 80px 0
+  &__title
+    @include title($black)
+    padding-bottom: 64px
+    text-align: center
+  &__wrapper
+    display: flex
+    width: 100%
+  &__list
+    width: 50%
+    padding-right: 40px
+    &-item
+      background: #FFFFFF
+      border: 1px solid #2B7AF4
+      box-shadow: -4px 6px 0px rgba(43, 122, 244, 0.25)
+      border-radius: 40px
+      padding: 40px
+      margin-bottom: 16px
+      &:last-child
+        margin-bottom: 0
+      &-text
+        font-size: 16px
+        font-weight: 300
+        color: $black
+        line-height: 125%
+        padding-bottom: 16px
+        &:last-of-type
+          padding-bottom: 0
+  &__img
+    width: 100%
+    &-wrapper
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &-btn
+      @include btn-main($blue, $white)
+      margin-top: 40px
+      &:hover
+        background: $hoverBlue
+      &_desk
+        display: block
+      &_mob
+        display: none
+
+
+.help
+  background: url("/src/img/help-bg.svg") no-repeat bottom center
+  background-size: 100%
+  width: 100%
+  padding: 80px 0
+  background-position-y: 15rem
+  &__title
+    @include title($black)
+    padding-bottom: 64px
+    text-align: center
+  &__wrapper
+    display: flex
+    width: 100%
+  &__list
+    width: 50%
+    padding-left: 40px
+    &-item
+      background: #FFFFFF
+      border: 1px solid #2B7AF4
+      box-shadow: -4px 6px 0px rgba(43, 122, 244, 0.25)
+      border-radius: 40px
+      padding: 40px
+      margin-bottom: 16px
+      &:last-of-type
+        margin-bottom: 0
+      &-text
+        font-size: 16px
+        font-weight: 300
+        color: $black
+        line-height: 125%
+        padding-bottom: 16px
+        &:last-of-type
+          padding-bottom: 0
+  &__img
+    width: 100%
+    max-width: 480px
+    &_desk
+      display: block
+    &_mob
+      display: none
+    &-wrapper
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &-btn
+      @include btn-main($blue, $white)
+      margin-top: 40px
+      &:hover
+        background: $hoverBlue
+      &_desk
+        display: block
+      &_mob
+        display: none
+
+
+.donate
+  width: 100%
+  &__wrapper
+    background: $yellow
+    border-radius: 40px
+    padding: 80px
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__box
+    width: 50%
+    max-width: 420px
+  &__title
+    @include title($black)
+    padding-bottom: 64px
+  &__text
+    font-size: 16px
+    font-weight: 300
+    color: $black
+    line-height: 125%
+    padding-bottom: 16px
+    &:last-of-type
+      padding-bottom: 0
+  &__btn
+    @include btn-main($blue, $white)
+    &:hover
+      background: $hoverBlue
+    &-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 64px
+  &__img
+    width: 50%
+    max-width: 550px
+
+
+.partners
+  width: 100%
+  padding: 80px 0
+  &__title
+    @include title($black)
+    padding-bottom: 64px
+    width: 100%
+    text-align: center
+  &__wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    grid-column-gap: 16px
+    grid-row-gap: 16px
+  &__item
+    padding: 0 16px
+    overflow: hidden
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    border: 1px solid #2B7AF4
+    box-shadow: -4px 6px 0px rgba(43, 122, 244, 0.25)
+    border-radius: 20px
+    &-logo
+      width: 100%
+
+
+.questions
+  background: $blue
+  width: 100%
+  padding: 128px 0
+  &__title
+    @include title($white)
+    padding-bottom: 12px
+    &-box
+      width: 50%
+  &__subtitle
+    font-size: 16px
+    color: $white
+    font-weight: 300
+  &__social
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 460px
+    width: 50%
+    &-item
+      border-radius: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 60px
+      height: 60px
+      margin-right: 8px
+      background: $white
+      transition: $transition
+      &:last-child
+        margin-right: 0
+      &:hover
+        transition: $transition
+        background: $hoverWhite
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+
+@media (max-width: $tablet)
+  .about
+    padding: 40px 0
+    &__title
+      &-img
+        display: block
+    &__text
+      &-box
+        padding-top: 24px
+
+
+  .slider
+    &__item
+      &-text
+        &:before
+          top: -32px
+          left: 128px
+      &-avatar
+        display: none
+    &__nav
+      &-wrapper
+        width: 100%
+
+
+  .psycho
+    padding: 40px 0
+    &__wrapper
+      flex-direction: column-reverse
+      align-items: center
+    &__list
+      width: 100%
+      padding-right: 0
+    &__img
+      &-wrapper
+        width: 100%
+        margin-bottom: 24px
+      &-btn
+        margin-top: 24px
+        &_desk
+          display: none
+        &_mob
+          display: block
+
+
+  .help
+    background: none
+    padding: 40px 0
+    &__wrapper
+        flex-direction: column
+    &__list
+      width: 100%
+      padding-left: 0
+    &__img
+      max-width: none
+      padding-bottom: 40px
+      &_desk
+        display: none
+      &_mob
+        display: block
+      &-wrapper
+        width: calc(100% + 64px)
+        position: relative
+        left: -32px
+        margin: 0 auto
+      &-btn
+        margin-top: 8px
+        &_desk
+          display: none
+        &_mob
+          display: block
+    &__btn
+      &-mob
+        &-box
+          display: flex
+          justify-content: center
+          align-items: center
+    &__title
+      padding-bottom: 16px
+
+
+  .about
+    padding: 40px 0
+    &__img
+      display: none
+    &__box
+      width: 100%
+    &__social
+      display: none
+
+
+  .donate
+    padding: 40px 0
+    &__wrapper
+      border-radius: 0
+      width: calc(100% + 64px)
+      position: relative
+      left: -32px
+      padding: 80px 32px
+    &__box
+      width: 100%
+    &__img
+      display: none
+    &__btn
+      &:first-child
+        margin-bottom: 24px
+      &-box
+        flex-direction: column
+        padding-top: 24px
+    &__title
+      padding-bottom: 24px
+
+
+  .questions
+    padding: 40px 0
+    &__wrapper
+      flex-direction: column
+    &__title
+      text-align: center
+      max-width: 200px
+      margin: 0 auto
+      padding-bottom: 0
+      &-box
+        width: 100%
+        padding-bottom: 24px
+    &__subtitle
+      display: none
+    &__social
+      width: 100%
+      flex-wrap: wrap
+      justify-content: center
+      &-item
+        margin-right: 40px
+        margin-bottom: 16px
+        &:nth-child(3)
+          margin-right: 0
+
+
+  .partners
+    &__wrapper
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+    &__item
+      height: 56px
+
+@media (max-width: $mobile)
+  .course
+    background-size: 200%
+    background-position-x: -24rem
+    background-position-y: 14rem
+    margin-top: 7rem
+    &__subtitle
+      font-size: 16px
+    &__cards
+      &-item
+        padding: 24px
+        width: calc(100% + 32px)
+        position: relative
+        left: -16px
+        margin-bottom: 24px
+        align-items: center
+        &:last-of-type
+          margin-bottom: 0
+        &-box
+          padding-bottom: 40px
+          width: 100%
+          max-width: none
+    &__title
+      &-box
+        padding-bottom: 16em
+
+
+  .help
+    &__title
+      max-width: 200px
+      width: 100%
+      margin: 0 auto
+    &__img
+      padding-bottom: 24px
+
+
+  .slider
+    &__title
+      padding-bottom: 40px

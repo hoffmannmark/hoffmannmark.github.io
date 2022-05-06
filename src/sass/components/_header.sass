@@ -1,0 +1,52 @@
+.header
+  border-bottom: 1px solid $blue
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 80px
+  &__logo
+    margin-right: 16px
+  &__list
+    display: flex
+    align-items: center
+  &__item
+    margin-right: 40px
+    &-link
+      color: $black
+      transition: $transition
+      &:hover
+        color: $blue
+        transition: $transition
+  &__lang
+    display: flex
+    align-items: center
+    background: #CADEFC
+    border-radius: 12px
+    &-item
+      padding: 6px 12px
+      cursor: pointer
+      transition: $transition
+      &.active
+        background: $blue
+        border-radius: 12px
+        color: $white
+        transition: $transition
+  &__hr
+    border: none
+    background: $white
+    height: 1px
+    margin: 0
+    position: relative
+    width: calc(100% + 48px)
+    left: -24px
+
+.hamburger
+  display: none
+
+@media (max-width: $tablet)
+  .header
+    &__list
+      display: none
+
+  @import "hamburger"

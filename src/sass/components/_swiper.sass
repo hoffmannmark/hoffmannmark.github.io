@@ -1,0 +1,46 @@
+.swiper
+  &-pagination
+    position: relative!important
+    bottom: 0!important
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 16px
+    &-bullet
+      &-active
+        background: $blue!important
+    &-bullets
+      width: auto!important
+  &-button
+    &-next
+      width: 40px!important
+      height: 40px!important
+      position: relative!important
+      right: -32px!important
+      margin-top: 0!important
+      top: auto!important
+      z-index: 10
+      &:after
+        content: url("/src/img/arrow-right.svg")
+        font-size: 0!important
+    &-prev
+      width: 40px!important
+      height: 40px!important
+      position: relative
+      left: -72px!important
+      margin-top: 0!important
+      top: auto!important
+      z-index: 10
+      &:after
+        content: url("/src/img/arrow-left.svg")
+        font-size: 0!important
+
+@media (max-width: $tablet)
+  .swiper
+    &-wrapper
+      margin-left: 24px
+    &-button
+      &-next
+        display: none!important
+      &-prev
+        display: none!important
